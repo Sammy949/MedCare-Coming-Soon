@@ -1,30 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By SamY All Rights Reserved © 2022 -->
+<html lang="en" class="no-js">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="MedCare.jpg" type="image/x-icon">
-	<title>MedCare | SamY</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="MedCare2.jpg" type="image/x-icon">
+	<title>MedCare</title>
+
+	<!-- aos css file cdn link -->
+	<link rel="stylesheet" href="css/aos.css">
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+    
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+	<!-- custom css file link -->
+
+	<style>
+	    .no-js #loader{
+	    	display: none;  
+	    }
+
+	    .js #loader{
+	    	display: block;
+	    	position: absolute;
+	    	left: 100px;
+	    	top: 0; 
+	    }
+
+	    .se-pre-con {
+	        position: fixed;
+	        left: 0px;
+	        top: 0px;
+	        width: 100%;
+	        height: 100%;
+	        z-index: 9999;
+	        background: url(images/Preloader_9.gif) center no-repeat #fff;
+	    }
+	</style>
+
+	<script>
+		$(window).load(function() {
+			$(".se-pre-con").fadeOut("slow");;
+		});
+	</script>
+
 </head>
+
 <body>
-	<div class="container">
-		<div class="bg">
-			<video src="video.mp4" muted autoplay loop></video>
+
+	<div class="se-pre-con"></div>
+		<div class="scroll-up-btn">
+	        <i class="fas fa-angle-up"></i>
+	    </div>
+
+	<!-- header section starts -->
+
+	<header>
+
+		<div class="container">
+
+			<a href="about.html" class="logo"><span>M</span>ed<span>C</span>are</a>
+			
+			<div class="search-box">
+				<a href="./Search/stch.php" class="btn-search"><i class="fas fa-search"></i></a>
+			</div>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="soon.html">MedTerms</a></li>
+					<li><a href="article.html">Articles</a></li>
+					<li><a href="soon.html">MedNews</a></li>
+					<li><a href="tips.html">Tips</a></li>
+				</ul>
+			</nav>
+			<div class="fas fa-bars"></div>	
+
 		</div>
+	</header>
+
+
+	<!-- home section starts -->
+
+	<section class="home">
 		
-		<h1>Coming Soon</h1>
-		<h3><span style="color: #0188DF;">M</span>ed<span style="color: #0188DF;">C</span>are under construction</h3>
-		<p>Stay <span>Safe</span>, Stay <span>Healthy</span><br>Caring for <span>you</span></p>
+		<div class="container">
+			
+		    <div class="row min-vh-100 align-items-center text-center text-md-left">
+		    	
+		    	<div class="col-md-6 pr-md-5" data-aos="zoom-in">
+		    		<img src="MedCare.jpg" width="100%" alt="MedCare Logo">
+		    	</div>
 
-		<div class="progress-bar">
-			<span></span>
+		    	<div class="col-md-6 pl-md-5 text-center content" data-aos="fade-left">
+		    		<h1><span>Stay</span> Safe, <span>Stay</span> Healthy.</h1>
+		    		<h3>Caring for you.</h3>
+		    		<a href="about.html"><button class="button">Learn More</button></a>
+		    	</div>
+		
+		    </div>
+
 		</div>
-	</div>
 
-	<div class="copyright">
-        <p>Copyright © <a href="https://samy01.netlify.app">SamY</a></p>
-    </div>
+	</section>
+	<!-- home section ends -->
+
+	<!-- Report section starts -->
+
+	<section class="monkeypox">
+		
+		<div class="container" data-aos="flip-up">		
+		    <h1 class="heading"><span>'</span> Disease Report <span>'</span></h1>
+		    <h2 class="heading-2">Monkeypox</h2>
+
+			<div>
+                <h1 class="heading">
+                    <span>*</span> Information about Monkeypox <span>*</span>
+                </h1>
+
+				<img src="./images/monkeypox.jpg" alt="Monkeypox image">
+
+                <p>Monkey-pox is a rare but potentially serious disease that is caused by the monkey-pox virus. Monkey-pox virus is from the same family of viruses as the smallpox virus. It is also less severe and transmissible than smallpox. Monkey-pox can spread from infected humans, animals, and materials contaminated with the virus. Monkey-pox virus is characterized by a new, unexplained rash and skin lesions. It is usually found in Central and West Africa and normally does not spread in the United States<a href="./Articles/monkeypox.html">...More</a></p>
+
+            </div>
+
+						</p>
+						<a href="https://covid19-livestats.netlify.app/" target="_blank"><button class="button">See COVID-19 LIVE STATS</button></a>
+				</div>
+		</div>
+
+	</section>
+			   
+	<!-- Report section ends  -->
+
+	<!-- Tips section starts -->
+
+	<section class="tips">
+	    <div class="max-width" data-aos="zoom-in">
+	        <h2 class="title">Tips</h2>
+	        <div class="carousel owl-carousel">
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Wash your Hands</div>
+	                    <p>You should wash your hands properly with soap and clean running water to reduce the spread of the Coronavirus</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">To Protect your self from the Coronavirus and Its Variants</div>
+	                    <p>Get Vaccinated, Use an alcohol-based sanitizer and always wear your face mask when in the public.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Social Distance</div>
+	                    <p>Maintain a safe distance from anyone who is coughing or sneezing. Always maintain a social distance of at least 6m long to prevent the spread of Coronavirus when in the public.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Touching of the face</div>
+	                    <p>Avoid unnecessary touching your eyes, nose or mouth as you may have touched an infected surface with your hands.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Sneezing</div>
+	                    <p>Cover your nose and mouth with a tissue when coughing or sneezing and if you do not have a tissue with you, cover your nose and mouth with your bent elbow.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Stay At Home</div>
+	                    <p>If you are feeling unwell, stay home until yo feel better. If you ave a fever, cough and difficulty breathing, seek medical attention. Call in advance and follow the directions of your local health authority.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Avoid unnecessary visits</div>
+	                    <p>Avoiding unneeded/unnecessary visits to medical facilities allows the healthcare systems to operate more effectively, therefore protecting you and others.</p>
+	                </div>
+	            </div>
+	            <div class="card">
+	                <div class="box">
+	                    <div class="text">Self-Care</div>
+	                    <p>If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other familiy members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.</p>
+	                </div>
+	            </div>
+	        </div>
+	        <a href="tips.html"><button class="button all">See more</button></a>
+
+	    </div>
+	</section>
+
+
+	<!-- facilty section ends -->
+
+	<!-- articles section starts -->
+
+	<section class="article">
+		
+		<div class="container">
+			
+			<h1 class="heading"><span>'</span> Latest MedCare Articles to Read <span>'</span></h1>
+
+				<div class="box-container">
+					<div class="box" data-aos="fade-left">
+						<img src="images/monkeypox.jpg" alt="">
+						<div class="content">
+							<h3>MonkeyPox</h3>
+							<p>This is an article featuring the information on the monkeypox disease, its prevention methods, its history and its transmission methods</p>
+							<a href="PDFs/Monkeypox.pdf" download><button class="button">Check It Out</button></a>
+						</div>
+					</div>
+					
+					<div class="box" data-aos="fade-right">
+						<img src="images/covid-19.png" alt="">
+						<div class="content">
+							<h3>Covid-19</h3>
+							<p>This is an article about the coronavirus, it's history and its prevention methods. <br><strong>Note:</strong> This file is in a powerpoint format(pptx)</p>
+							<a href="PPTX/COVID-19.pptx" download><button class="button">Check It Out</button></a>
+						</div>
+					</div>
+									
+				</div>	
+				<a href="article.html"><button class="button all">View All</button></a>
+
+		</div>
+
+	</section>
+
+
+	<!-- Article section ends -->
+
+	<section class="email">
+		<div class="container">
+			<h2>Enter your email address to receive latest news and articles from MedCare</h2>
+			<p><b>NOTE:</b> You can unsubscribe from these mails at any time of your choice.</p>
+
+			<div class="col-lg-6 mx-auto">
+				<div class="input-group">
+					<input type="email" class="form-control" placeholder="Enter Email Address" style="font-size: 2rem;" aria-label="Enter Email Address" required>
+					<span class="input-group-btn">
+						<button class="btn btn-secondary" type="submit" form="post">Sign Up</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section starts -->
+	<section class="footer">
+	
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="col-md-6" data-aos="fade-right">
+					<a href="../about.html" class="logo"><span>M</span>ed<span>C</span>are</a>
+					<p>The Medical Healthcare companion created to keep you up to date with Medical issues. It also gives helpful articles, tips and information about the happenings in the world of health.</p>
+				</div>
+	
+				<div class="col-md-6 text-center mx-auto" data-aos="fade-up">
+					<h3>Links</h3>
+					<a href="../index.html">Home</a>
+					<a href="../about.html">About</a>
+					<a href="../soon.html">MedTerms</a>
+					<a href="../article.html">Articles</a>
+					<a href="../soon.html">MedNews</a>
+					<a href="../tips.html">Tips</a>
+				</div>
+			</div>
+		</div>
+	
+		<h1 class="credit text-center mx-auto">Created by  <a href="http://samy01.netlify.app" target="_blank">SamY</a> All Rights Reserved &copy; 2022</h1>
+	
+	</section>
+
+	<!-- footer section ends -->
+
+	<!-- header section ends -->
+
+
+	<!-- jquery cdn link -->
+	<script src="js/jquery.min.js"></script>
+	 
+	<!-- aos js file cdn link -->
+	<script src="js/aos.js"></script>
+
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- custom js link -->
+	<script src="js/main.js"></script>
+
+	<script>
+		AOS.init({
+			duration:1000,
+			delay:400
+		})
+	</script>
+
+
 </body>
 </html>
